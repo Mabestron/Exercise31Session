@@ -30,8 +30,8 @@ public class loginservlet extends HttpServlet {
 			HttpSession miSesion = request.getSession();
 			miSesion.setAttribute("user", username);
 			miSesion.setAttribute("pass", password);
-			output.println("Usuario Logueado");
-			//response.sendRedirect("welcome.jsp");
+			//output.println("Usuario Logueado");
+			response.sendRedirect("welcome.jsp");
 		}
 		else
 		{
